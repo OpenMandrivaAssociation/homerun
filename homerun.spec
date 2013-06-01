@@ -2,7 +2,7 @@ Name:           homerun
 Summary:        Fullscreen Launcher for KDE
 Version:        1.0.0
 Release:        1
-License:        GPL-2.0+,LGPL-2.1+,BSD
+License:        GPL-2,LGPL-2.1,BSD
 Group:          Graphical desktop/KDE
 Source0:        ftp://ftp.kde.org/pub/kde/stable/homerun/src/%{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -47,6 +47,7 @@ needed to build software using Homerun.
 
 %build
 %cmake_kde4
+%make
 
 %post   -n libhomerun -p /sbin/ldconfig
 %postun -n libhomerun -p /sbin/ldconfig
@@ -76,4 +77,5 @@ needed to build software using Homerun.
 %makeinstall_std -C build
 
 %find_lang plasma_applet_org.kde.homerun
+
 
