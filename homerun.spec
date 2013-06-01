@@ -16,9 +16,11 @@ BuildRequires:  kdebase4-runtime-devel >= 4.8.0
 BuildRequires:  kdebase4-devel >= 4.8.0
 
 %description
-Homerun is a fullscreen launcher with content organized in tabs. A tab is composed
-of several "sources". A source can provide one or more sections to a tab. Homerun
-comes with a few built-in sources, but custom sources can be written using libhomerun. 
+Homerun is a fullscreen launcher with content 
+organized in tabs. A tab is composedof several 
+"sources". A source can provide one or more 
+sections to a tab. Homerun comes with a few built-in 
+sources, but custom sources can be written using libhomerun. 
 
 %package -n libhomerun
 Summary:        Libraries Needed by Homerun
@@ -26,8 +28,8 @@ Requires:       kdebase4-runtime >= 4.9.3
 Requires:       libqtgui4 >= 4.8.1
 
 %description -n libhomerun
-This package provides libraries, data engines, and icons needed by all
-public transport plasma applets.
+This package provides libraries, data engines, 
+and icons needed by all public transport plasma applets.
 
 
 %package -n homerun-devel
@@ -37,8 +39,8 @@ Requires:       %{name} = %{version}
 Requires:       libhomerun = %{version}
 
 %description -n homerun-devel
-This package provides development libraries and headers needed to build
-software using Homerun.
+This package provides development libraries and headers 
+needed to build software using Homerun.
 
 %prep
 %setup -q
@@ -55,7 +57,8 @@ software using Homerun.
 
 
 %files
-%doc COPYING LICENSE.BSD LICENSE.GPL-2 LICENSE.LGPL-2.1 NEWS README.md
+%doc COPYING LICENSE.BSD LICENSE.GPL-2 
+LICENSE.LGPL-2.1 NEWS README.md
 %{_bindir}/homerunviewer
 %{_libdir}/kde4/*.so
 %{_libdir}/kde4/imports/org/kde/homerun
