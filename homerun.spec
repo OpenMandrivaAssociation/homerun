@@ -57,8 +57,7 @@ needed to build software using Homerun.
 
 
 %files
-%doc COPYING LICENSE.BSD LICENSE.GPL-2 
-LICENSE.LGPL-2.1 NEWS README.md
+%doc COPYING LICENSE.BSD LICENSE.GPL-2 LICENSE.LGPL-2.1 NEWS README.md
 %{_bindir}/homerunviewer
 %{_libdir}/kde4/*.so
 %{_libdir}/kde4/imports/org/kde/homerun
