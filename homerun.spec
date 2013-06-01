@@ -23,7 +23,7 @@ sections to a tab. Homerun comes with a few built-in
 sources, but custom sources can be written using libhomerun. 
 
 %package -n libhomerun
-Summary:        Libraries Needed by Homerun
+Summary:        KDE 4 core library
 Requires:       kdebase4-runtime >= 4.9.3
 Requires:       libqtgui4 >= 4.8.1
 
@@ -33,8 +33,8 @@ and icons needed by all public transport plasma applets.
 
 
 %package -n homerun-devel
-Summary:        Development Files for Homerun
-Group:          Development/Libraries/KDE
+Summary:        KDE 4 core library
+Group:          System/Libraries
 Requires:       %{name} = %{version}
 Requires:       libhomerun = %{version}
 
@@ -46,17 +46,13 @@ needed to build software using Homerun.
 %setup -q
 
 %build
-  %cmake
-  %make
-
-%install
-%makeinstall_std -C build
+%cmake_kde4
 
 %post   -n libhomerun -p /sbin/ldconfig
 %postun -n libhomerun -p /sbin/ldconfig
 
 
-%files
+%files -f plasma_applet_org.kde.homerun.lang
 %doc COPYING LICENSE.BSD LICENSE.GPL-2 LICENSE.LGPL-2.1 NEWS README.md
 %{_bindir}/homerunviewer
 %{_libdir}/kde4/*.so
@@ -66,7 +62,6 @@ needed to build software using Homerun.
 %{_datadir}/apps/*
 %{_datadir}/config/homerunrc
 %{_iconsdir}/hicolor/*/apps/homerun.*
-%{_datadir}/locale/*
 
 %files -n libhomerun
 %{_libdir}/libhomerun.so.*
@@ -75,4 +70,10 @@ needed to build software using Homerun.
 %{_libdir}/libhomerun.so
 %{_libdir}/cmake/Homerun
 %{_includedir}/homerun
+
+
+%install
+%makeinstall_std -C build
+
+%find_lang plasma_applet_org.kde.homerun
 
