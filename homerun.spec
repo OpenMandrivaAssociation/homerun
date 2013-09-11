@@ -4,12 +4,12 @@
 
 Summary:	Fullscreen Launcher for KDE
 Name:		homerun
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 License:	GPLv2+, LGPLv2.1+, BSD
 Group:		Graphical desktop/KDE
 Url:		http://userbase.kde.org/Homerun
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}/src/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	kdelibs4-devel
 BuildRequires:	kdebase4-devel
