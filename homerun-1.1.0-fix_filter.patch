@@ -1,0 +1,24 @@
+From: Eike Hein <hein@kde.org>
+Date: Sun, 04 Aug 2013 15:55:39 +0000
+Subject: Fix trigger when filtering.
+X-Git-Url: http://quickgit.kde.org/?p=homerun.git&a=commitdiff&h=b45f3eeb6b96a276e7806f91f929cba2b3892541
+---
+Fix trigger when filtering.
+---
+
+
+--- a/components/sources/installedapps/filterableinstalledappsmodel.cpp
++++ b/components/sources/installedapps/filterableinstalledappsmodel.cpp
+@@ -82,7 +82,9 @@
+ 
+ bool InstalledAppsFilterModel::trigger(int row, const QString &actionId, const QVariant &actionArgument)
+ {
+-    return m_installedAppsModel->trigger(row, actionId, actionArgument);
++    const QModelIndex &idx = index(row, 0);
++    const QModelIndex &sourceIndex = mapToSource(idx);
++    return m_installedAppsModel->trigger(sourceIndex.row(), actionId, actionArgument);
+ }
+ 
+ SideBarModel::SideBarModel(FilterableInstalledAppsModel *parent)
+
+
