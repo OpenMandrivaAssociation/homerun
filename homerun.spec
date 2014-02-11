@@ -27,12 +27,14 @@ written using libhomerun.
 %{_kde_bindir}/homerunviewer
 %{_kde_appsdir}/%{name}
 %{_kde_appsdir}/plasma/plasmoids/org.kde.homerun
+%{_kde_appsdir}/plasma/plasmoids/org.kde.homerun-kicker
 %{_kde_configdir}/homerunrc
 %{_kde_iconsdir}/hicolor/*/apps/homerun.*
 %{_kde_libdir}/kde4/*.so
 %{_kde_libdir}/kde4/imports/org/kde/homerun
 %{_kde_services}/*.desktop
 %{_kde_servicetypes}/homerun-source.desktop
+%{_datadir}/config/homerunkickerrc
 
 
 #----------------------------------------------------------------------------
