@@ -5,7 +5,7 @@
 Summary:	Fullscreen Launcher for KDE
 Name:		homerun
 Version:	1.2.0
-Release:	2
+Release:	1
 License:	GPLv2+, LGPLv2.1+, BSD
 Group:		Graphical desktop/KDE
 Url:		http://userbase.kde.org/Homerun
@@ -27,12 +27,14 @@ written using libhomerun.
 %{_kde_bindir}/homerunviewer
 %{_kde_appsdir}/%{name}
 %{_kde_appsdir}/plasma/plasmoids/org.kde.homerun
+%{_kde_appsdir}/plasma/plasmoids/org.kde.homerun-kicker
 %{_kde_configdir}/homerunrc
 %{_kde_iconsdir}/hicolor/*/apps/homerun.*
 %{_kde_libdir}/kde4/*.so
 %{_kde_libdir}/kde4/imports/org/kde/homerun
 %{_kde_services}/*.desktop
 %{_kde_servicetypes}/homerun-source.desktop
+%{_datadir}/config/homerunkickerrc
 
 
 #----------------------------------------------------------------------------
