@@ -1,0 +1,23 @@
+diff -Naur homerun-1.2.0/fullscreen/applet/configkeys.h homerun-1.2.0.tpg/fullscreen/applet/configkeys.h
+--- homerun-1.2.0/fullscreen/applet/configkeys.h	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/fullscreen/applet/configkeys.h	2014-02-23 22:10:38.266241213 +0000
+@@ -21,6 +21,6 @@
+ #define CONFIGKEYS_H
+ 
+ #define CFG_LAUNCHER_ICON_KEY "LauncherIcon"
+-#define CFG_LAUNCHER_ICON_DEFAULT "homerun"
++#define CFG_LAUNCHER_ICON_DEFAULT "openmandriva"
+ 
+ #endif /* CONFIGKEYS_H */
+diff -Naur homerun-1.2.0/kicker/package/contents/config/main.xml homerun-1.2.0.tpg/kicker/package/contents/config/main.xml
+--- homerun-1.2.0/kicker/package/contents/config/main.xml	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/kicker/package/contents/config/main.xml	2014-02-23 22:01:30.587711638 +0000
+@@ -7,7 +7,7 @@
+ 
+   <group name="General">
+     <entry name="icon" type="String">
+-      <default>homerun</default>
++      <default>openmandriva</default>
+     </entry>
+     <entry name="runnerSupport" type="Bool">
+       <default>true</default>
