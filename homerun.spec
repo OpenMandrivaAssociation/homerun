@@ -5,11 +5,12 @@
 Summary:	Fullscreen Launcher for KDE
 Name:		homerun
 Version:	1.2.0
-Release:	3
+Release:	4
 License:	GPLv2+, LGPLv2.1+, BSD
 Group:		Graphical desktop/KDE
 Url:		http://userbase.kde.org/Homerun
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}/src/%{name}-%{version}.tar.xz
+Source1:	favoriteapps.xml
 Patch0:		homerun-1.2.0-use-openmandriva-icon.patch
 BuildRequires:	cmake
 BuildRequires:	kdelibs4-devel
@@ -83,3 +84,6 @@ software using Homerun.
 
 %find_lang plasma_applet_org.kde.homerun
 
+# (tpg) use OMV favourite apps settings
+rm -rf %{buildroot}%{_kde_appsdir}/%{name}/favoriteapps.xml
+install -m 644 %{SOURCE1} %{buildroot}%{_kde_appsdir}/%{name}/
