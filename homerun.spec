@@ -85,5 +85,5 @@ software using Homerun.
 %find_lang plasma_applet_org.kde.homerun
 
 # (tpg) use OMV favourite apps settings
-rm -rf %{buildroot}%{_kde_appsdir}/name/favoriteapps.xml
-install -m 644 %{SOURCE1} %{buildroot}%{_kde_appsdir}/name/
+rm -rf %{buildroot}%{_kde_appsdir}/%{name}/favoriteapps.xml
+install -m 644 %{SOURCE1} %{buildroot}%{_kde_appsdir}/%{name}/
