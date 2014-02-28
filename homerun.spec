@@ -12,6 +12,7 @@ Url:		http://userbase.kde.org/Homerun
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}/src/%{name}-%{version}.tar.xz
 Source1:	favoriteapps.xml
 Patch0:		homerun-1.2.0-use-openmandriva-icon.patch
+Patch1:		homerun-1.2.0-italian-tranlsation.patch
 BuildRequires:	cmake
 BuildRequires:	kdelibs4-devel
 BuildRequires:	kdebase4-devel
