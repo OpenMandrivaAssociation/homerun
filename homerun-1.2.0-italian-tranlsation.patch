@@ -1,0 +1,666 @@
+diff -Naur homerun-1.2.0/po/it/CMakeLists.txt homerun-1.2.0.tpg/po/it/CMakeLists.txt
+--- homerun-1.2.0/po/it/CMakeLists.txt	1970-01-01 00:00:00.000000000 +0000
++++ homerun-1.2.0.tpg/po/it/CMakeLists.txt	2014-02-28 15:58:57.972231360 +0000
+@@ -0,0 +1,2 @@
++file(GLOB _po_files *.po)
++GETTEXT_PROCESS_PO_FILES( it ALL INSTALL_DESTINATION ${LOCALE_INSTALL_DIR} ${_po_files} )
+diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po
+--- homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po	1970-01-01 00:00:00.000000000 +0000
++++ homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po	2014-02-28 16:00:14.608311711 +0000
+@@ -0,0 +1,656 @@
++# Copyright (C) YEAR This_file_is_part_of_KDE
++# This file is distributed under the same license as the PACKAGE package.
++#
++# Rafael Belmonte <EagleScreen@gmail.com>, 2013.
++# Eloy Cuadra <ecuadra@eloihr.net>, 2013.
++# luca pedrielli <luca.pedrielli@gmail.com>, 2014.
++msgid ""
++msgstr ""
++"Project-Id-Version: \n"
++"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
++"POT-Creation-Date: 2013-12-19 01:37+0000\n"
++"PO-Revision-Date: 2014-02-27 13:29+0100\n"
++"Last-Translator: luca pedrielli <luca.pedrielli@gmail.com>\n"
++"Language-Team: luca pedrielli <luca.pedrielli@gmail.com>\n"
++"Language: it\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Plural-Forms: nplurals=2; plural=n != 1;\n"
++"X-Generator: Lokalize 1.1\n"
++
++msgctxt "NAME OF TRANSLATORS"
++msgid "Your names"
++msgstr "Luca Pedrielli"
++
++#, fuzzy
++msgctxt "EMAIL OF TRANSLATORS"
++msgid "Your emails"
++msgstr "agoiza@gmail.com"
++
++#: components/qml/ActionMenu.qml:75
++msgid "(Empty)"
++msgstr "(Vuoto)"
++
++#: components/sourceregistry.cpp:237
++#, kde-format
++msgid "Runner: %1"
++msgstr ""
++
++#: components/sourceregistry.cpp:255
++msgid "Installed Applications"
++msgstr "Applicazioni installate"
++
++# ¿Explora o Explorar?
++#: components/sourceregistry.cpp:256
++msgid "Browse installed applications by categories"
++msgstr "Naviga le applicazioni installate per categoria"
++
++#: components/sourceregistry.cpp:259
++msgid "All Installed Applications"
++msgstr "Tutte le applicazioni installate"
++
++#: components/sourceregistry.cpp:260
++msgid "List all installed applications in a flat list, grouped by categories"
++msgstr "Tutte le applicazioni installate raggruppate per categoria"
++
++#: components/sourceregistry.cpp:263
++msgid "All Installed Applications With Filters"
++msgstr "Tutte le applicazioni installate con filtro"
++
++#: components/sourceregistry.cpp:264
++msgid "List all installed applications and filter via the sidebar"
++msgstr ""
++"Tutte le applicazioni installate filtrabili mediante il pannello "
++"laterale"
++
++#: components/sourceregistry.cpp:267
++#: components/sources/recentapps/recentappsmodel.cpp:290
++#| msgid "Applications"
++msgid "Recent Applications"
++msgstr "Applicazioni Recenti"
++
++#: components/sourceregistry.cpp:268
++msgid "List the most recently launched applications"
++msgstr "Applicazioni avviate più di recente"
++
++#: components/sourceregistry.cpp:271
++msgid "Folder"
++msgstr "Cartella"
++
++#: components/sourceregistry.cpp:272
++msgid "List the content of a folder and let you browse into sub-folders"
++msgstr ""
++"Elenca il contenuto di una cartella e permette di navigare nelle "
++"sotto-cartelle"
++
++#: components/sourceregistry.cpp:275
++#: components/sources/favorites/favoriteplacesmodel.cpp:139
++msgid "Favorite Places"
++msgstr "Risorse preferite"
++
++#: components/sourceregistry.cpp:276
++msgid "Browse the content of your favorite places"
++msgstr "Naviga il contenuto delle tue risorse preferite"
++
++#: components/sourceregistry.cpp:279
++#: components/sources/favorites/favoriteappsmodel.cpp:234
++msgid "Favorite Applications"
++msgstr "Applicazioni preferite"
++
++#: components/sourceregistry.cpp:280
++msgid "List applications marked as favorite"
++msgstr "Applicazioni marcate come preferite"
++
++#: components/sourceregistry.cpp:283
++msgid "Power Management"
++msgstr ""
++
++#: components/sourceregistry.cpp:284
++msgid "Provide buttons to suspend, hibernate, reboot or halt your computer"
++msgstr ""
++"Fornisce i pulsanti per sospendere, ibernare, riavviare o spegnere il tuo "
++"computer."
++
++#: components/sourceregistry.cpp:287
++#: components/sources/session/sessionmodel.cpp:98
++msgid "Session"
++msgstr "Sessione"
++
++# «Salir» o «Cerrar sesión» ??
++#: components/sourceregistry.cpp:288
++msgid "Provide buttons to lock the screen, log out, or switch to another user"
++msgstr "Fornisce i pulsanti per bloccare lo schermo, uscire o cambiare utente."
++
++#: components/sourceregistry.cpp:291
++#: components/sources/session/openedsessionsmodel.cpp:67
++msgid "Opened Sessions"
++msgstr "Sessioni aperte"
++
++#: components/sourceregistry.cpp:292
++msgid "Provide buttons to switch to opened sessions"
++msgstr "Fornisce i pulsanti per passare alle sessioni aperte"
++
++#: components/sourceregistry.cpp:295
++#: components/sources/power/combinedpowersessionmodel.cpp:307
++#| msgctxt "an action"
++#| msgid "New Session"
++msgid "Power / Session"
++msgstr "Energia  / Sessione"
++
++#: components/sourceregistry.cpp:296
++#| msgid "Provide buttons to suspend, hibernate, reboot or halt your computer"
++msgid ""
++"Provide buttons to manage your workspace session and the power state of your "
++"computer"
++msgstr ""
++"Fornisce i pulsanti per la gestione delle sessioni e per la "
++"gestione energetica del tuo computer"
++
++#: components/sourceregistry.cpp:299
++msgid "KRunner"
++msgstr "KRunner"
++
++#: components/sourceregistry.cpp:300
++msgid "Perform searchs using a selection of runners"
++msgstr "Esegue ricerche utilizzando una selezione di estensioni"
++
++#. i18n: ectx: property (text), widget (QLabel, label_2)
++#: components/sources/dir/dirconfigurationwidget.ui:32
++msgid "Folder to show:"
++msgstr "Cartella da mostrare:"
++
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: components/sources/dir/dirconfigurationwidget.ui:52
++msgid "Title:"
++msgstr "Titolo:"
++
++#. i18n: ectx: property (text), widget (QLabel, titleHelpLabel)
++#: components/sources/dir/dirconfigurationwidget.ui:68
++msgid "If title is left empty, the folder name will be used"
++msgstr ""
++"Se il titolo viene lasciato vuoto sarà utilizzato il nome della cartella"
++
++#: components/sources/favorites/fileplacesmodel.cpp:124
++msgctxt "KFile System Bookmarks"
++msgid "Home"
++msgstr ""
++
++#: components/sources/favorites/fileplacesmodel.cpp:127
++msgctxt "KFile System Bookmarks"
++msgid "Network"
++msgstr "Rete"
++
++#: components/sources/favorites/fileplacesmodel.cpp:139
++msgctxt "KFile System Bookmarks"
++msgid "Root"
++msgstr "Radice"
++
++#: components/sources/favorites/fileplacesmodel.cpp:143
++msgctxt "KFile System Bookmarks"
++msgid "Trash"
++msgstr "Cestino"
++
++#: components/sources/favorites/fileplacesmodel.cpp:758
++#, kde-format
++msgid "&Release '%1'"
++msgstr "&Rilascia '%1'"
++
++#: components/sources/favorites/fileplacesmodel.cpp:760
++#, kde-format
++msgid "&Safely Remove '%1'"
++msgstr "Rimozione &Sicura «%1»"
++
++#: components/sources/favorites/fileplacesmodel.cpp:763
++#, kde-format
++msgid "&Unmount '%1'"
++msgstr "S&montare «%1»"
++
++#: components/sources/favorites/fileplacesmodel.cpp:784
++#, kde-format
++msgid "&Eject '%1'"
++msgstr "&Espelli «%1»"
++
++#: components/sources/favorites/fileplacesmodel.cpp:818
++#, kde-format
++msgid "The device '%1' is not a disk and cannot be ejected."
++msgstr "Il dispositivo «%1» non è un disco e non può essere espulso."
++
++#: components/sources/favorites/fileplacesmodel.cpp:854
++#, kde-format
++msgid "An error occurred while accessing '%1', the system responded: %2"
++msgstr "Si è verificato un errore accedendo a '%1', il sistema ha risposto: %2"
++
++#: components/sources/favorites/fileplacesmodel.cpp:858
++#, kde-format
++msgid "An error occurred while accessing '%1'"
++msgstr "Si è verificato un errore accedendo a '%1'"
++
++#: components/sources/installedapps/installedappsconfigurationwidget.cpp:133
++#: components/sources/installedapps/installedappsmodel.cpp:328
++msgid "All Applications"
++msgstr "Tutte le applicazioni"
++
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: components/sources/installedapps/installedappsconfigurationwidget.ui:17
++msgid "Pick the application folder to display:"
++msgstr ""
++
++#: components/sources/installedapps/installedappsmodel.cpp:256
++#: components/sources/installedapps/installedappsmodel.cpp:267
++#: components/sources/recentapps/recentappsmodel.cpp:121
++#: components/sources/recentapps/recentappsmodel.cpp:132
++msgid "Add to Desktop"
++msgstr "Aggiungi alla scrivania"
++
++#: components/sources/installedapps/installedappsmodel.cpp:260
++#: components/sources/installedapps/installedappsmodel.cpp:271
++#: components/sources/recentapps/recentappsmodel.cpp:125
++#: components/sources/recentapps/recentappsmodel.cpp:136
++msgid "Add to Panel"
++msgstr "Aggiungi al pannello"
++
++#: components/sources/installedapps/installedappsmodel.cpp:291
++#: components/sources/recentapps/recentappsmodel.cpp:154
++msgid "Add as Launcher"
++msgstr "Aggiungi come avviatore"
++
++#: components/sources/installedapps/installedappsmodel.cpp:421
++msgid "Applications"
++msgstr "Applicazioni"
++
++#: components/sources/power/combinedpowersessionmodel.cpp:241
++#| msgid "Remove from Favorites"
++msgid "Remove from Sidebar"
++msgstr "Elimina dai preferiti"
++
++#: components/sources/power/combinedpowersessionmodel.cpp:245
++#| msgid "Add to Panel"
++msgid "Add to Sidebar"
++msgstr "Aggiungi al panello laterale"
++
++# Utilizo «Sistema» porque es lo que se utiliza ya en Kickoff y otras partes de KDE y así se mantiene la coherencia.
++#: components/sources/power/powermodel.cpp:43
++msgid "Power"
++msgstr ""
++
++# «Dormir» está siendo usado en Powerdevil. Pero creo que traduce desde «Sleep».
++#: components/sources/power/powermodel.cpp:47
++msgctxt "an action"
++msgid "Suspend"
++msgstr "Sospendere"
++
++#: components/sources/power/powermodel.cpp:53
++msgctxt "an action"
++msgid "Hibernate"
++msgstr ""
++
++#: components/sources/power/powermodel.cpp:59
++msgctxt "an action"
++msgid "Restart"
++msgstr "Riavviare"
++
++#: components/sources/power/powermodel.cpp:64
++msgctxt "an action"
++msgid "Shutdown"
++msgstr "Spegnere"
++
++#: components/sources/recentapps/recentappsmodel.cpp:112
++#| msgid "Favorite Applications"
++msgid "Forget Application"
++msgstr "Dimentica Applicazione"
++
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: components/sources/runners/runnerconfigurationwidget.ui:17
++msgid "Pick the runners you would like to use in this source:"
++msgstr ""
++
++#: components/sources/session/sessionmodel.cpp:50
++msgctxt "an action"
++msgid "Lock"
++msgstr "Blocca"
++
++#: components/sources/session/sessionmodel.cpp:65
++msgctxt "an action"
++msgid "New Session"
++msgstr "Nuova sessione"
++
++# ¿ «Salir» o «Cerrar sesión» ?
++#: components/sources/session/sessionmodel.cpp:85
++msgctxt "an action"
++msgid "Logout"
++msgstr ""
++
++#: devdoc/helloworld/helloworld.cpp:47
++msgid "Hello"
++msgstr "Ciao"
++
++#: devdoc/helloworld/helloworld.cpp:52
++msgid "World"
++msgstr "Mondo"
++
++#: devdoc/helloworld/helloworld.cpp:67
++msgid "Hello World"
++msgstr "Ciao Mondo"
++
++#: fullscreen/applet/configmanager.cpp:46
++msgid "General"
++msgstr "Generale"
++
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: fullscreen/applet/generalconfigpage.ui:17
++msgid "Icon:"
++msgstr "Icona:"
++
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: fullscreen/package/contents/ui/config.ui:17
++msgid "Text Color:"
++msgstr "Colore del testo:"
++
++#. i18n: ectx: property (text), widget (QLabel, label_4)
++#: fullscreen/package/contents/ui/config.ui:30
++msgid "Text Shadow:"
++msgstr "Ombra del testo:"
++
++#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeNone)
++#: fullscreen/package/contents/ui/config.ui:40
++msgid "None"
++msgstr "Nessuno"
++
++#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeAuto)
++#: fullscreen/package/contents/ui/config.ui:47
++msgid "Automatic"
++msgstr "Automatico"
++
++#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeCustom)
++#: fullscreen/package/contents/ui/config.ui:56
++msgid "Custom:"
++msgstr "Personalizzato:"
++
++#: fullscreen/package/contents/ui/main.qml:99
++msgid "Go to previous tab"
++msgstr "Vai alla scheda precedente"
++
++#: fullscreen/package/contents/ui/main.qml:105
++msgid "Go to next tab"
++msgstr "Vai alla scheda successiva"
++
++#: fullscreen/package/contents/ui/main.qml:111
++msgid "Focus search field"
++msgstr "Fuoco sul campo di ricerca"
++
++#: fullscreen/package/contents/ui/main.qml:117
++msgid "Go back"
++msgstr "Indietro"
++
++#: fullscreen/package/contents/ui/main.qml:123
++msgid "Go forward"
++msgstr "Avanti"
++
++#: fullscreen/package/contents/ui/main.qml:129
++msgid "Go up"
++msgstr "Su"
++
++#: fullscreen/package/contents/ui/main.qml:154
++msgctxt "Used for tabs which have no name"
++msgid "<Untitled>"
++msgstr "<Senza Titolo>"
++
++#: fullscreen/package/contents/ui/main.qml:239
++msgctxt "Button to leave configure mode"
++msgid "Done"
++msgstr "Fatto"
++
++#: fullscreen/package/contents/ui/main.qml:261
++msgid "Search in current tab..."
++msgstr "Cerca nella scheda corrente..."
++
++#: fullscreen/package/contents/ui/main.qml:297
++msgid "End Configure Tabs"
++msgstr "Termina configurazione schede"
++
++#: fullscreen/package/contents/ui/main.qml:297
++msgid "Configure Tabs"
++msgstr "Configura schede"
++
++#: fullscreen/package/contents/ui/main.qml:306
++msgid "Configure Shortcuts..."
++msgstr "Configura scorciatoie..."
++
++#: fullscreen/package/contents/ui/main.qml:310
++msgid "Show Action List Buttons"
++msgstr ""
++
++#: fullscreen/package/contents/ui/main.qml:319
++msgid "Show Desktop Tool Box"
++msgstr "Mostra Desktop Tool Box"
++
++#: fullscreen/package/contents/ui/main.qml:330
++msgid "Restore Tabs to Default"
++msgstr "Ripristina schede predefinite"
++
++#: fullscreen/package/contents/ui/main.qml:333
++msgid ""
++"Are you sure you want to restore tabs?\n"
++"Restoring tabs will reset your configuration to the default Homerun tabs.\n"
++"Your lists of favorite applications and places will remain untouched."
++msgstr ""
++"Sei sicuro di voler ripristinare le schede?\n"
++"Il ripristino delle schede resetterà la configurazione alle schede "
++"predefinite di Homerun.\n "
++"Applicazioni e risorse preferite non saranno modificate."
++
++#: fullscreen/package/contents/ui/main.qml:334
++#: fullscreen/package/contents/ui/main.qml:335
++msgid "Restore Tabs"
++msgstr "Ripristina Schede"
++
++#: fullscreen/package/contents/ui/main.qml:348
++#, kde-format
++msgid "About %1"
++msgstr "Informazioni su %1"
++
++#: fullscreen/package/contents/ui/Result.qml:149
++msgid "Drag to reorder; release to show menu"
++msgstr "Trascina per riordinare; rilascia per visualizzare il menu"
++
++#: fullscreen/package/contents/ui/Result.qml:151
++msgid "Release to show menu"
++msgstr "Rilascia per visualizzare il menu"
++
++#: fullscreen/package/contents/ui/Result.qml:153
++msgid "Drag to reorder"
++msgstr "Trascina per riordinare"
++
++#: fullscreen/package/contents/ui/Result.qml:156
++msgid "This item has no menu and cannot be dragged"
++msgstr "Questo elemento non ha menu e non può essere trascinato"
++
++#: fullscreen/package/contents/ui/ResultsView.qml:192
++#: kicker/package/contents/ui/ItemListDelegate.qml:252
++#: kicker/package/contents/ui/SidebarItem.qml:122
++msgid "Remove from Favorites"
++msgstr "Rimuovi dai preferiti"
++
++#: fullscreen/package/contents/ui/ResultsView.qml:196
++#: kicker/package/contents/ui/ItemListDelegate.qml:256
++#: kicker/package/contents/ui/SidebarItem.qml:126
++msgid "Add to Favorites"
++msgstr "Aggiungi ai preferiti"
++
++#: fullscreen/package/contents/ui/ResultsView.qml:367
++#, kde-format
++msgid "%1 has been added to your favorites"
++msgstr "%1 è stato aggiunto ai tuoi preferiti"
++
++#: fullscreen/package/contents/ui/SourceItem.qml:55
++#, kde-format
++msgid "Broken source '%1'"
++msgstr ""
++
++#: fullscreen/package/contents/ui/TabContent.qml:84
++msgid "Tab Icon:"
++msgstr "Icona della scheda:"
++
++#: fullscreen/package/contents/ui/TabContent.qml:103
++msgid "Tab Label:"
++msgstr "Etichetta della scheda:"
++
++#: fullscreen/viewer/main.cpp:41
++#, kde-format
++msgid ""
++"<p><b>Sorry, Homerun failed to load</b></p><p>Do you want to report this "
++"error?</p><p>If you decide to report it, please copy and paste the following "
++"output in your report:</p><pre>%1</pre>"
++msgstr ""
++"<p><b>Siamo spiacenti, è impossibile caricare Homerun</b></p><p>Vuoi "
++"segnalare questo errore?</p><p>Se decidi di segnalarlo, per favore copia e "
++"incolla il seguente testo nel tuo report</p><pre>%1</pre>"
++
++#: fullscreen/viewer/main.cpp:48
++msgid "Report Error"
++msgstr "Comunica un errore"
++
++#: fullscreen/viewer/main.cpp:65
++msgid "Log focused item (for debug purposes)"
++msgstr ""
++
++#: fullscreen/viewer/main.cpp:66
++msgid "Use a plain window (for debug purposes)"
++msgstr ""
++
++#: internal/aboutdata.cpp:41
++msgctxt "Program name"
++msgid "Homerun"
++msgstr "Homerun"
++
++#: internal/aboutdata.cpp:44
++msgid "(C) 2012-2013 Blue Systems"
++msgstr "© 2012-2013 Blue Systems"
++
++# Supongo que es un nombre propio
++#: internal/aboutdata.cpp:47
++msgid "Shaun Reich"
++msgstr "Shaun Reich"
++
++#: internal/aboutdata.cpp:47 internal/aboutdata.cpp:48
++msgid "Developer"
++msgstr ""
++
++# Supongo que es un nombre propio
++#: internal/aboutdata.cpp:48
++msgid "Aurélien Gâteau"
++msgstr "Aurélien Gâteau"
++
++#: internal/i18nconfig.cpp:30
++msgctxt "Tab title"
++msgid "Home"
++msgstr ""
++
++#: internal/i18nconfig.cpp:31
++msgctxt "Tab title"
++msgid "Files"
++msgstr "Risorse"
++
++#: internal/i18nconfig.cpp:32
++msgctxt "Tab title"
++msgid "Applications"
++msgstr "Applicazioni"
++
++# «Energía» queda algo ambiguo para mi gusto en este contexto. En otras partes de KDE se usa «Apagar» o «Salir». Utilizo «Salir» por coherencia con otros componentes de KDE como el menú de Kickoff.
++#: internal/i18nconfig.cpp:33
++msgctxt "Tab title"
++msgid "Power"
++msgstr "Esci"
++
++#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
++#: kicker/package/contents/ui/config.ui:20
++msgid "Behavior"
++msgstr ""
++
++#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_runnerSupport)
++#: kicker/package/contents/ui/config.ui:29
++msgid ""
++"If this option is enabled, search may display additional columns with search "
++"results powered by certain Plasma runner plugins, such as \"Bookmarks\" and "
++"\"Desktop Search\"."
++msgstr ""
++"Se l'opzione è attivata, la ricerca può visualizzare colonne aggiuntive con "
++"i risultati della ricerca alimentati da alcune estensioni Plasma , come ad "
++"esempio \"Bookmarks\" e \"Desktop Search\"."
++
++#. i18n: ectx: property (text), widget (QCheckBox, kcfg_runnerSupport)
++#: kicker/package/contents/ui/config.ui:32
++msgid "Use Plasma runners for additional search results"
++msgstr "Utilizza estensioni Plasma per i risultati di ricerca aggiuntivi"
++
++#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
++#: kicker/package/contents/ui/config.ui:42
++msgid "Appearance"
++msgstr "Aspetto"
++
++#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomButtonImage)
++#: kicker/package/contents/ui/config.ui:51
++msgid "Custom button image:"
++msgstr "Immagine del pulsante personalizzata:"
++
++#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_buttonImage)
++#: kicker/package/contents/ui/config.ui:58
++msgid "*.jpg *.png *.xpm *.gif *.webp"
++msgstr ""
++
++#. i18n: ectx: property (text), widget (QCheckBox, kcfg_alignToBottom)
++#: kicker/package/contents/ui/config.ui:65
++msgid "Align contents to bottom"
++msgstr "Allinea il contenuto in basso"
++
++#: kicker/package/contents/ui/main.qml:301
++#| msgid "Type to search..."
++msgid "Search..."
++msgstr "Cerca..."
++
++#: kicker/package/contents/ui/main.qml:556
++#| msgctxt "Program name"
++#| msgid "Homerun"
++msgid "Homerun Kicker"
++msgstr ""
++
++#: kicker/package/contents/ui/main.qml:557
++msgid "Launch applications and manage your desktop."
++msgstr "Avvia le applicazioni e gestisci il tuo desktop."
++
++#: kicker/package/contents/ui/main.qml:560
++#| msgid "Applications"
++msgid "Edit Applications..."
++msgstr "Modifica applicazioni...."
++
++#: lib/actionlist.cpp:75
++msgctxt "@action:inmenu"
++msgid "Empty Trash"
++msgstr "Svuota il cestino"
++
++#: lib/actionlist.cpp:93
++msgid "Open with:"
++msgstr "Apri con:"
++
++#: lib/actionlist.cpp:105
++msgid "Properties"
++msgstr "Proprietà"
++
++#: plugins/recentdocuments/recentdocuments.cpp:130
++msgid "Recent Documents"
++msgstr "Documenti recenti"
++
++#: plugins/recentdocuments/recentdocuments.cpp:152
++msgid "Forget Document"
++msgstr "Dimentica documento"
++
++#~ msgid "Show on screen <screen>"
++#~ msgstr "Mostrar en la pantalla <screen>"
++
++#~ msgid "Nightly build using source from: %1"
++#~ msgstr "Compilación nocturna usando código fuente de: %1"
++
++#~ msgctxt "an action"
++#~ msgid "Switch User"
++#~ msgstr "Cambiar de usuario"
