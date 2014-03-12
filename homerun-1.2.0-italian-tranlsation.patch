@@ -1,42 +1,164 @@
+diff -Naur homerun-1.2.0/devdoc/helloworld/homerun-source-helloworld.desktop homerun-1.2.0.tpg/devdoc/helloworld/homerun-source-helloworld.desktop
+--- homerun-1.2.0/devdoc/helloworld/homerun-source-helloworld.desktop	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/devdoc/helloworld/homerun-source-helloworld.desktop	2014-03-12 22:36:10.072811909 +0000
+@@ -10,6 +10,7 @@
+ Name[fr]=Bonjour tout le monde
+ Name[gl]=Ola mundo
+ Name[hu]=Helló, világ
++Name[it]=Ciao mondo
+ Name[lt]=Sveikas pasauli!
+ Name[mr]=हेल्लो वर्ल्ड
+ Name[nl]=Hallo wereld
+@@ -37,6 +38,7 @@
+ Comment[fr]=Un exemple de service de Homerum
+ Comment[gl]=Un exemplo de fonte de Homerun
+ Comment[hu]=A Homerun forrás egy példája
++Comment[it]=Un esempio di fonte di Homerun
+ Comment[lt]=Homerun šaltinio pavyzyds
+ Comment[mr]=होमरन स्रोताचे उदाहरण
+ Comment[nl]=Voorbeeld van een Homerun-bron
+diff -Naur homerun-1.2.0/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake homerun-1.2.0.tpg/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake
+--- homerun-1.2.0/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake	2014-03-12 22:36:49.148886239 +0000
+@@ -11,6 +11,7 @@
+ Name[fr]=Lanceur de Homerun
+ Name[gl]=Lanzador Homerun
+ Name[hu]=Homerun indító
++Name[it]=Avviatore di Homerun
+ Name[nl]=Programmastarter Homerun
+ Name[pl]=Program uruchamiający Homerun
+ Name[pt]=Lançador Homerun
+@@ -36,6 +37,7 @@
+ Comment[fr]=Un lanceur d'applications
+ Comment[gl]=Un lanzador de programas.
+ Comment[hu]=Egy alkalmazásindító
++Comment[it]=Un avviatore di applicazioni
+ Comment[lt]=Programų leidiklis
+ Comment[mr]=अनुप्रयोग प्रक्षेपक
+ Comment[nl]=Een programmastarter
+diff -Naur homerun-1.2.0/fullscreen/package/metadata.desktop.cmake homerun-1.2.0.tpg/fullscreen/package/metadata.desktop.cmake
+--- homerun-1.2.0/fullscreen/package/metadata.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/fullscreen/package/metadata.desktop.cmake	2014-03-12 22:37:17.495651934 +0000
+@@ -11,6 +11,7 @@
+ Name[fr]=Homerun
+ Name[gl]=Homerun
+ Name[hu]=Homerun
++Name[it]=Homerun
+ Name[nl]=Homerun
+ Name[pl]=Homerun
+ Name[pt]=Homerun
+@@ -35,6 +36,7 @@
+ Comment[fr]=Un lanceur d'applications
+ Comment[gl]=Un lanzador de programas.
+ Comment[hu]=Egy alkalmazásindító
++Comment[it]=Un avviatore di applicazioni
+ Comment[lt]=Programų leidiklis
+ Comment[mr]=अनुप्रयोग प्रक्षेपक
+ Comment[nl]=Een programmastarter
+diff -Naur homerun-1.2.0/fullscreen/viewer/homerunviewer.desktop homerun-1.2.0.tpg/fullscreen/viewer/homerunviewer.desktop
+--- homerun-1.2.0/fullscreen/viewer/homerunviewer.desktop	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/fullscreen/viewer/homerunviewer.desktop	2014-03-12 22:37:51.159559204 +0000
+@@ -17,6 +17,7 @@
+ Name[fr]=Application Homerun pour KDE
+ Name[gl]=Aplicativo de KDE Homerun
+ Name[hu]=KDE Homerun alkalmazás
++Name[it]=Applicazione Homerun di KDE
+ Name[lt]=KDE Homerun programa
+ Name[mr]=केडीई होमरन अनुप्रयोग
+ Name[nl]=Toepassing KDE Homerun
+@@ -45,6 +46,7 @@
+ Comment[fr]=Affiche Homerun pour KDE dans une fenêtre qui apparaît
+ Comment[gl]=Mostra o Homerun de KDE nun menú emerxente
+ Comment[hu]=Megjeleníti a KDE Homerunt felugró ablakban
++Comment[it]=Visualizza Homerun di KDE in una finestra a comparsa
+ Comment[lt]=Rodyti KDE Homerun kaip iškylantį langą
+ Comment[mr]=केडीई होमरन पॉपअप मध्ये दर्शवितो
+ Comment[nl]=Toont KDE Homerun in een pop-up
+diff -Naur homerun-1.2.0/kicker/package/metadata.desktop.cmake homerun-1.2.0.tpg/kicker/package/metadata.desktop.cmake
+--- homerun-1.2.0/kicker/package/metadata.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/kicker/package/metadata.desktop.cmake	2014-03-12 22:39:07.772628833 +0000
+@@ -7,6 +7,7 @@
+ Name[fi]=Homerun Kicker
+ Name[fr]=Lanceur de Homerun
+ Name[hu]=Homerun kirúgó
++Name[it]=Kicker di Homerun
+ Name[nl]=Programmastarter Homerun
+ Name[pt]=Homerun Kicker
+ Name[pt_BR]=Homerun Kicker
+@@ -22,6 +23,7 @@
+ Comment[fi]=Homerunin versio, joka ei vie koko näyttöä
+ Comment[fr]=Version de Homerun non plein-écran
+ Comment[hu]=A Homerun nem teljes képernyős verziója
++Comment[it]=Versione di Homerun a schermo ridotto
+ Comment[nl]=Versie van Homerun zonder volledig scherm
+ Comment[pt]=Versão em ecrã não-completo do Homerun
+ Comment[pt_BR]=Versão do Homerun em janela
+diff -Naur homerun-1.2.0/lib/homerun-source.desktop homerun-1.2.0.tpg/lib/homerun-source.desktop
+--- homerun-1.2.0/lib/homerun-source.desktop	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/lib/homerun-source.desktop	2014-03-12 22:39:32.027285170 +0000
+@@ -11,6 +11,7 @@
+ Comment[fr]=Module externe Homerun
+ Comment[gl]=Engadido de fontes de Homerun
+ Comment[hu]=Homerun forrás bővítmény
++Comment[it]=Estensione delle fonti di Homerun
+ Comment[lt]=Homerun šaltinio priedas
+ Comment[mr]=होमरन स्रोत प्लगइन
+ Comment[nl]=Plug-in voor Homerun-bron
+diff -Naur homerun-1.2.0/plugins/recentdocuments/homerun-source-recentdocuments.desktop homerun-1.2.0.tpg/plugins/recentdocuments/homerun-source-recentdocuments.desktop
+--- homerun-1.2.0/plugins/recentdocuments/homerun-source-recentdocuments.desktop	2014-01-27 18:17:21.000000000 +0000
++++ homerun-1.2.0.tpg/plugins/recentdocuments/homerun-source-recentdocuments.desktop	2014-03-12 22:40:12.337377152 +0000
+@@ -12,6 +12,7 @@
+ Name[ga]=Cáipéisí is Déanaí
+ Name[gl]=Documentos recentes
+ Name[hu]=Legutóbbi dokumentumok
++Name[it]=Documenti recenti
+ Name[lt]=Neseniai naudoti dokumentai
+ Name[mr]=अलिकडील दस्तऐवज
+ Name[nl]=Recente documenten
+@@ -40,6 +41,7 @@
+ Comment[fr]=Liste les documents récemment ouverts
+ Comment[gl]=Lista de documentos abertos recentemente
+ Comment[hu]=Legutóbb megnyitott dokumentumok listázása
++Comment[it]=Elenca i documenti aperti di recente
+ Comment[lt]=Parodyti neseniai naudotus dokumentus
+ Comment[mr]=अलिकडे उघडलेल्या दस्तऐवजांची यादी
+ Comment[nl]=Recent geopende documenten tonen
 diff -Naur homerun-1.2.0/po/it/CMakeLists.txt homerun-1.2.0.tpg/po/it/CMakeLists.txt
 --- homerun-1.2.0/po/it/CMakeLists.txt	1970-01-01 00:00:00.000000000 +0000
-+++ homerun-1.2.0.tpg/po/it/CMakeLists.txt	2014-02-28 15:58:57.972231360 +0000
++++ homerun-1.2.0.tpg/po/it/CMakeLists.txt	2014-03-12 22:33:56.812148706 +0000
 @@ -0,0 +1,2 @@
 +file(GLOB _po_files *.po)
 +GETTEXT_PROCESS_PO_FILES( it ALL INSTALL_DESTINATION ${LOCALE_INSTALL_DIR} ${_po_files} )
 diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po
 --- homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po	1970-01-01 00:00:00.000000000 +0000
-+++ homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po	2014-02-28 16:00:14.608311711 +0000
-@@ -0,0 +1,656 @@
++++ homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po	2014-03-12 22:34:02.484304663 +0000
+@@ -0,0 +1,635 @@
 +# Copyright (C) YEAR This_file_is_part_of_KDE
 +# This file is distributed under the same license as the PACKAGE package.
 +#
-+# Rafael Belmonte <EagleScreen@gmail.com>, 2013.
-+# Eloy Cuadra <ecuadra@eloihr.net>, 2013.
-+# luca pedrielli <luca.pedrielli@gmail.com>, 2014.
++# Vincenzo Reale <smart2128@baslug.org>, 2014.
 +msgid ""
 +msgstr ""
-+"Project-Id-Version: \n"
++"Project-Id-Version: plasma_applet_org.kde.homerun\n"
 +"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-+"POT-Creation-Date: 2013-12-19 01:37+0000\n"
-+"PO-Revision-Date: 2014-02-27 13:29+0100\n"
-+"Last-Translator: luca pedrielli <luca.pedrielli@gmail.com>\n"
-+"Language-Team: luca pedrielli <luca.pedrielli@gmail.com>\n"
++"POT-Creation-Date: 2014-01-28 01:41+0000\n"
++"PO-Revision-Date: 2014-03-02 19:35+0100\n"
++"Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
++"Language-Team: Italian <kde-i18n-it@kde.org>\n"
 +"Language: it\n"
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
-+"Plural-Forms: nplurals=2; plural=n != 1;\n"
-+"X-Generator: Lokalize 1.1\n"
++"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"X-Generator: Lokalize 1.5\n"
 +
 +msgctxt "NAME OF TRANSLATORS"
 +msgid "Your names"
-+msgstr "Luca Pedrielli"
++msgstr "Vincenzo Reale"
 +
-+#, fuzzy
 +msgctxt "EMAIL OF TRANSLATORS"
 +msgid "Your emails"
-+msgstr "agoiza@gmail.com"
++msgstr "smart2128@baslug.org"
 +
 +#: components/qml/ActionMenu.qml:75
 +msgid "(Empty)"
@@ -45,16 +167,15 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#: components/sourceregistry.cpp:237
 +#, kde-format
 +msgid "Runner: %1"
-+msgstr ""
++msgstr "Esecutore: %1"
 +
 +#: components/sourceregistry.cpp:255
 +msgid "Installed Applications"
 +msgstr "Applicazioni installate"
 +
-+# ¿Explora o Explorar?
 +#: components/sourceregistry.cpp:256
 +msgid "Browse installed applications by categories"
-+msgstr "Naviga le applicazioni installate per categoria"
++msgstr "Sfoglia le applicazioni installate per categoria"
 +
 +#: components/sourceregistry.cpp:259
 +msgid "All Installed Applications"
@@ -62,27 +183,27 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: components/sourceregistry.cpp:260
 +msgid "List all installed applications in a flat list, grouped by categories"
-+msgstr "Tutte le applicazioni installate raggruppate per categoria"
++msgstr ""
++"Elenca tutte le applicazioni installate in una lista piatta, raggruppate in "
++"categorie"
 +
 +#: components/sourceregistry.cpp:263
 +msgid "All Installed Applications With Filters"
-+msgstr "Tutte le applicazioni installate con filtro"
++msgstr "Tutte le applicazione installate con filtri"
 +
 +#: components/sourceregistry.cpp:264
 +msgid "List all installed applications and filter via the sidebar"
 +msgstr ""
-+"Tutte le applicazioni installate filtrabili mediante il pannello "
-+"laterale"
++"Elenca tutte le applicazioni installate e filtra tramite la barra laterale"
 +
 +#: components/sourceregistry.cpp:267
 +#: components/sources/recentapps/recentappsmodel.cpp:290
-+#| msgid "Applications"
 +msgid "Recent Applications"
-+msgstr "Applicazioni Recenti"
++msgstr "Applicazioni recenti"
 +
 +#: components/sourceregistry.cpp:268
 +msgid "List the most recently launched applications"
-+msgstr "Applicazioni avviate più di recente"
++msgstr "Elenca le applicazioni avviate più di recente"
 +
 +#: components/sourceregistry.cpp:271
 +msgid "Folder"
@@ -91,8 +212,8 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#: components/sourceregistry.cpp:272
 +msgid "List the content of a folder and let you browse into sub-folders"
 +msgstr ""
-+"Elenca il contenuto di una cartella e permette di navigare nelle "
-+"sotto-cartelle"
++"Elenca il contenuto di una cartella e ti consente di navigare le "
++"sottocartelle"
 +
 +#: components/sourceregistry.cpp:275
 +#: components/sources/favorites/favoriteplacesmodel.cpp:139
@@ -101,7 +222,7 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: components/sourceregistry.cpp:276
 +msgid "Browse the content of your favorite places"
-+msgstr "Naviga il contenuto delle tue risorse preferite"
++msgstr "Sfoglia il contenuto delle tue risorse preferite"
 +
 +#: components/sourceregistry.cpp:279
 +#: components/sources/favorites/favoriteappsmodel.cpp:234
@@ -110,11 +231,11 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: components/sourceregistry.cpp:280
 +msgid "List applications marked as favorite"
-+msgstr "Applicazioni marcate come preferite"
++msgstr "Elenca le applicazioni marcate come preferite"
 +
 +#: components/sourceregistry.cpp:283
 +msgid "Power Management"
-+msgstr ""
++msgstr "Gestione energetica"
 +
 +#: components/sourceregistry.cpp:284
 +msgid "Provide buttons to suspend, hibernate, reboot or halt your computer"
@@ -127,10 +248,11 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgid "Session"
 +msgstr "Sessione"
 +
-+# «Salir» o «Cerrar sesión» ??
 +#: components/sourceregistry.cpp:288
 +msgid "Provide buttons to lock the screen, log out, or switch to another user"
-+msgstr "Fornisce i pulsanti per bloccare lo schermo, uscire o cambiare utente."
++msgstr ""
++"Fornisce i pulsanti per bloccare lo schermo, chiudere la sessione o passare "
++"a un altro utente"
 +
 +#: components/sourceregistry.cpp:291
 +#: components/sources/session/openedsessionsmodel.cpp:67
@@ -143,19 +265,16 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: components/sourceregistry.cpp:295
 +#: components/sources/power/combinedpowersessionmodel.cpp:307
-+#| msgctxt "an action"
-+#| msgid "New Session"
 +msgid "Power / Session"
-+msgstr "Energia  / Sessione"
++msgstr "Alimentazione / Sessione"
 +
 +#: components/sourceregistry.cpp:296
-+#| msgid "Provide buttons to suspend, hibernate, reboot or halt your computer"
 +msgid ""
 +"Provide buttons to manage your workspace session and the power state of your "
 +"computer"
 +msgstr ""
-+"Fornisce i pulsanti per la gestione delle sessioni e per la "
-+"gestione energetica del tuo computer"
++"Fornisce i pulsanti per gestire le sessioni del tuo spazio di lavoro e lo "
++"stato di alimentazione del tuo computer"
 +
 +#: components/sourceregistry.cpp:299
 +msgid "KRunner"
@@ -163,7 +282,7 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: components/sourceregistry.cpp:300
 +msgid "Perform searchs using a selection of runners"
-+msgstr "Esegue ricerche utilizzando una selezione di estensioni"
++msgstr "Esegue le ricerche utilizzando una selezione di esecutori."
 +
 +#. i18n: ectx: property (text), widget (QLabel, label_2)
 +#: components/sources/dir/dirconfigurationwidget.ui:32
@@ -178,13 +297,12 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#. i18n: ectx: property (text), widget (QLabel, titleHelpLabel)
 +#: components/sources/dir/dirconfigurationwidget.ui:68
 +msgid "If title is left empty, the folder name will be used"
-+msgstr ""
-+"Se il titolo viene lasciato vuoto sarà utilizzato il nome della cartella"
++msgstr "Se il titolo è vuoto, sarà utilizzato il nome della cartella"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:124
 +msgctxt "KFile System Bookmarks"
 +msgid "Home"
-+msgstr ""
++msgstr "Home"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:127
 +msgctxt "KFile System Bookmarks"
@@ -204,22 +322,22 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#: components/sources/favorites/fileplacesmodel.cpp:758
 +#, kde-format
 +msgid "&Release '%1'"
-+msgstr "&Rilascia '%1'"
++msgstr "&Rilascia «%1»"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:760
 +#, kde-format
 +msgid "&Safely Remove '%1'"
-+msgstr "Rimozione &Sicura «%1»"
++msgstr "Rimozione &sicura di «%1»"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:763
 +#, kde-format
 +msgid "&Unmount '%1'"
-+msgstr "S&montare «%1»"
++msgstr "&Smonta '%1'"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:784
 +#, kde-format
 +msgid "&Eject '%1'"
-+msgstr "&Espelli «%1»"
++msgstr "&Espelli '%1'"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:818
 +#, kde-format
@@ -229,12 +347,14 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#: components/sources/favorites/fileplacesmodel.cpp:854
 +#, kde-format
 +msgid "An error occurred while accessing '%1', the system responded: %2"
-+msgstr "Si è verificato un errore accedendo a '%1', il sistema ha risposto: %2"
++msgstr ""
++"Si è verificato un errore durante l'accesso a «%1», il sistema ha "
++"restituito: %2"
 +
 +#: components/sources/favorites/fileplacesmodel.cpp:858
 +#, kde-format
 +msgid "An error occurred while accessing '%1'"
-+msgstr "Si è verificato un errore accedendo a '%1'"
++msgstr "Si è verificato un errore durante l'accesso a «%1»"
 +
 +#: components/sources/installedapps/installedappsconfigurationwidget.cpp:133
 +#: components/sources/installedapps/installedappsmodel.cpp:328
@@ -244,14 +364,14 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#. i18n: ectx: property (text), widget (QLabel, label)
 +#: components/sources/installedapps/installedappsconfigurationwidget.ui:17
 +msgid "Pick the application folder to display:"
-+msgstr ""
++msgstr "Scegli la cartella delle applicazioni da visualizzare:"
 +
 +#: components/sources/installedapps/installedappsmodel.cpp:256
 +#: components/sources/installedapps/installedappsmodel.cpp:267
 +#: components/sources/recentapps/recentappsmodel.cpp:121
 +#: components/sources/recentapps/recentappsmodel.cpp:132
 +msgid "Add to Desktop"
-+msgstr "Aggiungi alla scrivania"
++msgstr "Aggiungi al desktop"
 +
 +#: components/sources/installedapps/installedappsmodel.cpp:260
 +#: components/sources/installedapps/installedappsmodel.cpp:271
@@ -270,50 +390,45 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgstr "Applicazioni"
 +
 +#: components/sources/power/combinedpowersessionmodel.cpp:241
-+#| msgid "Remove from Favorites"
 +msgid "Remove from Sidebar"
-+msgstr "Elimina dai preferiti"
++msgstr "Rimuovi dalla barra laterale"
 +
 +#: components/sources/power/combinedpowersessionmodel.cpp:245
-+#| msgid "Add to Panel"
 +msgid "Add to Sidebar"
-+msgstr "Aggiungi al panello laterale"
++msgstr "Aggiungi alla barra laterale"
 +
-+# Utilizo «Sistema» porque es lo que se utiliza ya en Kickoff y otras partes de KDE y así se mantiene la coherencia.
 +#: components/sources/power/powermodel.cpp:43
 +msgid "Power"
-+msgstr ""
++msgstr "Alimentazione"
 +
-+# «Dormir» está siendo usado en Powerdevil. Pero creo que traduce desde «Sleep».
 +#: components/sources/power/powermodel.cpp:47
 +msgctxt "an action"
 +msgid "Suspend"
-+msgstr "Sospendere"
++msgstr "Sospensione"
 +
 +#: components/sources/power/powermodel.cpp:53
 +msgctxt "an action"
 +msgid "Hibernate"
-+msgstr ""
++msgstr "Ibernazione"
 +
 +#: components/sources/power/powermodel.cpp:59
 +msgctxt "an action"
 +msgid "Restart"
-+msgstr "Riavviare"
++msgstr "Riavvia"
 +
 +#: components/sources/power/powermodel.cpp:64
 +msgctxt "an action"
 +msgid "Shutdown"
-+msgstr "Spegnere"
++msgstr "Spegni"
 +
 +#: components/sources/recentapps/recentappsmodel.cpp:112
-+#| msgid "Favorite Applications"
 +msgid "Forget Application"
-+msgstr "Dimentica Applicazione"
++msgstr "Dimentica applicazione"
 +
 +#. i18n: ectx: property (text), widget (QLabel, label)
 +#: components/sources/runners/runnerconfigurationwidget.ui:17
 +msgid "Pick the runners you would like to use in this source:"
-+msgstr ""
++msgstr "Scegli gli esecutori che desideri utilizzare in questa fonte:"
 +
 +#: components/sources/session/sessionmodel.cpp:50
 +msgctxt "an action"
@@ -325,11 +440,10 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgid "New Session"
 +msgstr "Nuova sessione"
 +
-+# ¿ «Salir» o «Cerrar sesión» ?
 +#: components/sources/session/sessionmodel.cpp:85
 +msgctxt "an action"
 +msgid "Logout"
-+msgstr ""
++msgstr "Chiudi sessione"
 +
 +#: devdoc/helloworld/helloworld.cpp:47
 +msgid "Hello"
@@ -341,7 +455,7 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +
 +#: devdoc/helloworld/helloworld.cpp:67
 +msgid "Hello World"
-+msgstr "Ciao Mondo"
++msgstr "Ciao mondo"
 +
 +#: fullscreen/applet/configmanager.cpp:46
 +msgid "General"
@@ -352,129 +466,134 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgid "Icon:"
 +msgstr "Icona:"
 +
++#: fullscreen/applet/homerunlauncher.cpp:60
++#: kicker/package/contents/ui/main.qml:568
++msgid "Edit Applications..."
++msgstr "Modifica applicazioni..."
++
 +#. i18n: ectx: property (text), widget (QLabel, label)
 +#: fullscreen/package/contents/ui/config.ui:17
 +msgid "Text Color:"
-+msgstr "Colore del testo:"
++msgstr "Colore testo:"
 +
 +#. i18n: ectx: property (text), widget (QLabel, label_4)
 +#: fullscreen/package/contents/ui/config.ui:30
 +msgid "Text Shadow:"
-+msgstr "Ombra del testo:"
++msgstr "Ombreggiatura testo:"
 +
 +#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeNone)
 +#: fullscreen/package/contents/ui/config.ui:40
 +msgid "None"
-+msgstr "Nessuno"
++msgstr "Nessuna"
 +
 +#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeAuto)
 +#: fullscreen/package/contents/ui/config.ui:47
 +msgid "Automatic"
-+msgstr "Automatico"
++msgstr "Automatica"
 +
 +#. i18n: ectx: property (text), widget (QRadioButton, kcfg_shadowModeCustom)
 +#: fullscreen/package/contents/ui/config.ui:56
 +msgid "Custom:"
-+msgstr "Personalizzato:"
++msgstr "Personalizzata:"
 +
-+#: fullscreen/package/contents/ui/main.qml:99
++#: fullscreen/package/contents/ui/main.qml:101
 +msgid "Go to previous tab"
 +msgstr "Vai alla scheda precedente"
 +
-+#: fullscreen/package/contents/ui/main.qml:105
++#: fullscreen/package/contents/ui/main.qml:107
 +msgid "Go to next tab"
 +msgstr "Vai alla scheda successiva"
 +
-+#: fullscreen/package/contents/ui/main.qml:111
++#: fullscreen/package/contents/ui/main.qml:113
 +msgid "Focus search field"
-+msgstr "Fuoco sul campo di ricerca"
++msgstr "Attiva il campo di ricerca"
 +
-+#: fullscreen/package/contents/ui/main.qml:117
++#: fullscreen/package/contents/ui/main.qml:119
 +msgid "Go back"
 +msgstr "Indietro"
 +
-+#: fullscreen/package/contents/ui/main.qml:123
++#: fullscreen/package/contents/ui/main.qml:125
 +msgid "Go forward"
 +msgstr "Avanti"
 +
-+#: fullscreen/package/contents/ui/main.qml:129
++#: fullscreen/package/contents/ui/main.qml:131
 +msgid "Go up"
 +msgstr "Su"
 +
-+#: fullscreen/package/contents/ui/main.qml:154
++#: fullscreen/package/contents/ui/main.qml:156
 +msgctxt "Used for tabs which have no name"
 +msgid "<Untitled>"
-+msgstr "<Senza Titolo>"
++msgstr "<Senza titolo>"
 +
-+#: fullscreen/package/contents/ui/main.qml:239
++#: fullscreen/package/contents/ui/main.qml:241
 +msgctxt "Button to leave configure mode"
 +msgid "Done"
 +msgstr "Fatto"
 +
-+#: fullscreen/package/contents/ui/main.qml:261
++#: fullscreen/package/contents/ui/main.qml:263
 +msgid "Search in current tab..."
-+msgstr "Cerca nella scheda corrente..."
++msgstr "Cerca nella scheda attuale..."
 +
-+#: fullscreen/package/contents/ui/main.qml:297
++#: fullscreen/package/contents/ui/main.qml:299
 +msgid "End Configure Tabs"
 +msgstr "Termina configurazione schede"
 +
-+#: fullscreen/package/contents/ui/main.qml:297
++#: fullscreen/package/contents/ui/main.qml:299
 +msgid "Configure Tabs"
 +msgstr "Configura schede"
 +
-+#: fullscreen/package/contents/ui/main.qml:306
++#: fullscreen/package/contents/ui/main.qml:308
 +msgid "Configure Shortcuts..."
 +msgstr "Configura scorciatoie..."
 +
-+#: fullscreen/package/contents/ui/main.qml:310
++#: fullscreen/package/contents/ui/main.qml:312
 +msgid "Show Action List Buttons"
-+msgstr ""
++msgstr "Mostra i pulsanti dell'elenco azioni"
 +
-+#: fullscreen/package/contents/ui/main.qml:319
++#: fullscreen/package/contents/ui/main.qml:321
 +msgid "Show Desktop Tool Box"
-+msgstr "Mostra Desktop Tool Box"
++msgstr "Mostra gli strumenti del desktop"
 +
-+#: fullscreen/package/contents/ui/main.qml:330
++#: fullscreen/package/contents/ui/main.qml:332
 +msgid "Restore Tabs to Default"
-+msgstr "Ripristina schede predefinite"
++msgstr "Ripristina schede ai valori predefiniti"
 +
-+#: fullscreen/package/contents/ui/main.qml:333
++#: fullscreen/package/contents/ui/main.qml:335
 +msgid ""
 +"Are you sure you want to restore tabs?\n"
 +"Restoring tabs will reset your configuration to the default Homerun tabs.\n"
 +"Your lists of favorite applications and places will remain untouched."
 +msgstr ""
 +"Sei sicuro di voler ripristinare le schede?\n"
-+"Il ripristino delle schede resetterà la configurazione alle schede "
-+"predefinite di Homerun.\n "
-+"Applicazioni e risorse preferite non saranno modificate."
++"Il ripristino delle schede azzererà la tua configurazione ai valori "
++"predefiniti di Homerun.\n"
++"Il tuo elenco di applicazioni e risorse preferite rimarrà inalterato."
 +
-+#: fullscreen/package/contents/ui/main.qml:334
-+#: fullscreen/package/contents/ui/main.qml:335
++#: fullscreen/package/contents/ui/main.qml:336
++#: fullscreen/package/contents/ui/main.qml:337
 +msgid "Restore Tabs"
-+msgstr "Ripristina Schede"
++msgstr "Ripristina schede"
 +
-+#: fullscreen/package/contents/ui/main.qml:348
++#: fullscreen/package/contents/ui/main.qml:350
 +#, kde-format
 +msgid "About %1"
 +msgstr "Informazioni su %1"
 +
 +#: fullscreen/package/contents/ui/Result.qml:149
 +msgid "Drag to reorder; release to show menu"
-+msgstr "Trascina per riordinare; rilascia per visualizzare il menu"
++msgstr "Trascina per riorganizzare; rilascia per mostrare il menu"
 +
 +#: fullscreen/package/contents/ui/Result.qml:151
 +msgid "Release to show menu"
-+msgstr "Rilascia per visualizzare il menu"
++msgstr "Rilascia per mostrare il menu"
 +
 +#: fullscreen/package/contents/ui/Result.qml:153
 +msgid "Drag to reorder"
-+msgstr "Trascina per riordinare"
++msgstr "Trascina per riorganizzare"
 +
 +#: fullscreen/package/contents/ui/Result.qml:156
 +msgid "This item has no menu and cannot be dragged"
-+msgstr "Questo elemento non ha menu e non può essere trascinato"
++msgstr "Questo elemento non ha un menu e non può essere trascinato"
 +
 +#: fullscreen/package/contents/ui/ResultsView.qml:192
 +#: kicker/package/contents/ui/ItemListDelegate.qml:252
@@ -491,20 +610,20 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#: fullscreen/package/contents/ui/ResultsView.qml:367
 +#, kde-format
 +msgid "%1 has been added to your favorites"
-+msgstr "%1 è stato aggiunto ai tuoi preferiti"
++msgstr "%1 è stato aggiunto ai preferiti"
 +
 +#: fullscreen/package/contents/ui/SourceItem.qml:55
 +#, kde-format
 +msgid "Broken source '%1'"
-+msgstr ""
++msgstr "Fonte danneggiata «%1»"
 +
-+#: fullscreen/package/contents/ui/TabContent.qml:84
++#: fullscreen/package/contents/ui/TabContent.qml:86
 +msgid "Tab Icon:"
-+msgstr "Icona della scheda:"
++msgstr "Icona scheda:"
 +
-+#: fullscreen/package/contents/ui/TabContent.qml:103
++#: fullscreen/package/contents/ui/TabContent.qml:105
 +msgid "Tab Label:"
-+msgstr "Etichetta della scheda:"
++msgstr "Etichetta scheda:"
 +
 +#: fullscreen/viewer/main.cpp:41
 +#, kde-format
@@ -513,21 +632,21 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +"error?</p><p>If you decide to report it, please copy and paste the following "
 +"output in your report:</p><pre>%1</pre>"
 +msgstr ""
-+"<p><b>Siamo spiacenti, è impossibile caricare Homerun</b></p><p>Vuoi "
-+"segnalare questo errore?</p><p>Se decidi di segnalarlo, per favore copia e "
-+"incolla il seguente testo nel tuo report</p><pre>%1</pre>"
++"<p><b>Spiacenti, non è stato possibile caricare Homerun</b></p><p>Vuoi "
++"segnalare questo errore?</p><p>Se decidi di segnalarlo, copia e incolla il "
++"testo seguente nella tua segnalazione:</p><pre>%1</pre>"
 +
 +#: fullscreen/viewer/main.cpp:48
 +msgid "Report Error"
-+msgstr "Comunica un errore"
++msgstr "Segnala errore"
 +
 +#: fullscreen/viewer/main.cpp:65
 +msgid "Log focused item (for debug purposes)"
-+msgstr ""
++msgstr "Registra l'elemento attivo (per scopi di debug)"
 +
 +#: fullscreen/viewer/main.cpp:66
 +msgid "Use a plain window (for debug purposes)"
-+msgstr ""
++msgstr "Utilizza una finestra semplice (per scopi di debug)"
 +
 +#: internal/aboutdata.cpp:41
 +msgctxt "Program name"
@@ -535,48 +654,50 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgstr "Homerun"
 +
 +#: internal/aboutdata.cpp:44
-+msgid "(C) 2012-2013 Blue Systems"
-+msgstr "© 2012-2013 Blue Systems"
++msgid "(C) 2012-2014 Blue Systems"
++msgstr "(C) 2012-2014 Blue Systems"
 +
-+# Supongo que es un nombre propio
 +#: internal/aboutdata.cpp:47
 +msgid "Shaun Reich"
 +msgstr "Shaun Reich"
 +
 +#: internal/aboutdata.cpp:47 internal/aboutdata.cpp:48
++#: internal/aboutdata.cpp:49
 +msgid "Developer"
-+msgstr ""
++msgstr "Sviluppatore"
 +
-+# Supongo que es un nombre propio
 +#: internal/aboutdata.cpp:48
 +msgid "Aurélien Gâteau"
 +msgstr "Aurélien Gâteau"
 +
++#: internal/aboutdata.cpp:49
++msgid "Eike Hein"
++msgstr "Eike Hein"
++
 +#: internal/i18nconfig.cpp:30
 +msgctxt "Tab title"
 +msgid "Home"
-+msgstr ""
++msgstr "Home"
 +
 +#: internal/i18nconfig.cpp:31
 +msgctxt "Tab title"
 +msgid "Files"
-+msgstr "Risorse"
++msgstr "File"
 +
 +#: internal/i18nconfig.cpp:32
 +msgctxt "Tab title"
 +msgid "Applications"
 +msgstr "Applicazioni"
 +
-+# «Energía» queda algo ambiguo para mi gusto en este contexto. En otras partes de KDE se usa «Apagar» o «Salir». Utilizo «Salir» por coherencia con otros componentes de KDE como el menú de Kickoff.
 +#: internal/i18nconfig.cpp:33
 +msgctxt "Tab title"
 +msgid "Power"
-+msgstr "Esci"
++msgstr "Alimentazione"
 +
 +#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 +#: kicker/package/contents/ui/config.ui:20
 +msgid "Behavior"
-+msgstr ""
++msgstr "Comportamento"
 +
 +#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_runnerSupport)
 +#: kicker/package/contents/ui/config.ui:29
@@ -585,14 +706,14 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +"results powered by certain Plasma runner plugins, such as \"Bookmarks\" and "
 +"\"Desktop Search\"."
 +msgstr ""
-+"Se l'opzione è attivata, la ricerca può visualizzare colonne aggiuntive con "
-+"i risultati della ricerca alimentati da alcune estensioni Plasma , come ad "
-+"esempio \"Bookmarks\" e \"Desktop Search\"."
++"Se questa opzione è abilitata, la ricerca potrebbe visualizzare colonne "
++"aggiuntive con i risultati forniti da alcune estensioni degli esecutori di "
++"Plasma, come «Segnalibri» e «Ricerca desktop»."
 +
 +#. i18n: ectx: property (text), widget (QCheckBox, kcfg_runnerSupport)
 +#: kicker/package/contents/ui/config.ui:32
 +msgid "Use Plasma runners for additional search results"
-+msgstr "Utilizza estensioni Plasma per i risultati di ricerca aggiuntivi"
++msgstr "Utilizza gli esecutori di Plasma per risultati di ricerca aggiuntivi"
 +
 +#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 +#: kicker/package/contents/ui/config.ui:42
@@ -602,12 +723,12 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useCustomButtonImage)
 +#: kicker/package/contents/ui/config.ui:51
 +msgid "Custom button image:"
-+msgstr "Immagine del pulsante personalizzata:"
++msgstr "Immagine personalizzata pulsante:"
 +
 +#. i18n: ectx: property (filter), widget (KUrlRequester, kcfg_buttonImage)
 +#: kicker/package/contents/ui/config.ui:58
 +msgid "*.jpg *.png *.xpm *.gif *.webp"
-+msgstr ""
++msgstr "*.jpg *.png *.xpm *.gif *.webp"
 +
 +#. i18n: ectx: property (text), widget (QCheckBox, kcfg_alignToBottom)
 +#: kicker/package/contents/ui/config.ui:65
@@ -615,29 +736,26 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgstr "Allinea il contenuto in basso"
 +
 +#: kicker/package/contents/ui/main.qml:301
-+#| msgid "Type to search..."
 +msgid "Search..."
 +msgstr "Cerca..."
 +
-+#: kicker/package/contents/ui/main.qml:556
-+#| msgctxt "Program name"
-+#| msgid "Homerun"
++#: kicker/package/contents/ui/main.qml:501
++#: plugins/recentdocuments/recentdocuments.cpp:130
++msgid "Recent Documents"
++msgstr "Documenti recenti"
++
++#: kicker/package/contents/ui/main.qml:564
 +msgid "Homerun Kicker"
-+msgstr ""
++msgstr "Homerun Kicker"
 +
-+#: kicker/package/contents/ui/main.qml:557
++#: kicker/package/contents/ui/main.qml:565
 +msgid "Launch applications and manage your desktop."
-+msgstr "Avvia le applicazioni e gestisci il tuo desktop."
-+
-+#: kicker/package/contents/ui/main.qml:560
-+#| msgid "Applications"
-+msgid "Edit Applications..."
-+msgstr "Modifica applicazioni...."
++msgstr "Avvia applicazioni e gestisce il tuo desktop."
 +
 +#: lib/actionlist.cpp:75
 +msgctxt "@action:inmenu"
 +msgid "Empty Trash"
-+msgstr "Svuota il cestino"
++msgstr "Svuota cestino"
 +
 +#: lib/actionlist.cpp:93
 +msgid "Open with:"
@@ -647,20 +765,6 @@ diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tp
 +msgid "Properties"
 +msgstr "Proprietà"
 +
-+#: plugins/recentdocuments/recentdocuments.cpp:130
-+msgid "Recent Documents"
-+msgstr "Documenti recenti"
-+
 +#: plugins/recentdocuments/recentdocuments.cpp:152
 +msgid "Forget Document"
 +msgstr "Dimentica documento"
-+
-+#~ msgid "Show on screen <screen>"
-+#~ msgstr "Mostrar en la pantalla <screen>"
-+
-+#~ msgid "Nightly build using source from: %1"
-+#~ msgstr "Compilación nocturna usando código fuente de: %1"
-+
-+#~ msgctxt "an action"
-+#~ msgid "Switch User"
-+#~ msgstr "Cambiar de usuario"
