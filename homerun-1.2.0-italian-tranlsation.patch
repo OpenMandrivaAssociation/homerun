@@ -1,6 +1,6 @@
 diff -Naur homerun-1.2.0/devdoc/helloworld/homerun-source-helloworld.desktop homerun-1.2.0.tpg/devdoc/helloworld/homerun-source-helloworld.desktop
 --- homerun-1.2.0/devdoc/helloworld/homerun-source-helloworld.desktop	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/devdoc/helloworld/homerun-source-helloworld.desktop	2014-03-12 22:36:10.072811909 +0000
++++ homerun-1.2.0.tpg/devdoc/helloworld/homerun-source-helloworld.desktop	2014-03-20 18:13:40.633885563 +0000
 @@ -10,6 +10,7 @@
  Name[fr]=Bonjour tout le monde
  Name[gl]=Ola mundo
@@ -19,7 +19,7 @@ diff -Naur homerun-1.2.0/devdoc/helloworld/homerun-source-helloworld.desktop hom
  Comment[nl]=Voorbeeld van een Homerun-bron
 diff -Naur homerun-1.2.0/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake homerun-1.2.0.tpg/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake
 --- homerun-1.2.0/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake	2014-03-12 22:36:49.148886239 +0000
++++ homerun-1.2.0.tpg/fullscreen/applet/plasma-applet-homerunlauncher.desktop.cmake	2014-03-20 18:13:40.633885563 +0000
 @@ -11,6 +11,7 @@
  Name[fr]=Lanceur de Homerun
  Name[gl]=Lanzador Homerun
@@ -38,7 +38,7 @@ diff -Naur homerun-1.2.0/fullscreen/applet/plasma-applet-homerunlauncher.desktop
  Comment[nl]=Een programmastarter
 diff -Naur homerun-1.2.0/fullscreen/package/metadata.desktop.cmake homerun-1.2.0.tpg/fullscreen/package/metadata.desktop.cmake
 --- homerun-1.2.0/fullscreen/package/metadata.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/fullscreen/package/metadata.desktop.cmake	2014-03-12 22:37:17.495651934 +0000
++++ homerun-1.2.0.tpg/fullscreen/package/metadata.desktop.cmake	2014-03-20 18:13:40.634885586 +0000
 @@ -11,6 +11,7 @@
  Name[fr]=Homerun
  Name[gl]=Homerun
@@ -57,7 +57,7 @@ diff -Naur homerun-1.2.0/fullscreen/package/metadata.desktop.cmake homerun-1.2.0
  Comment[nl]=Een programmastarter
 diff -Naur homerun-1.2.0/fullscreen/viewer/homerunviewer.desktop homerun-1.2.0.tpg/fullscreen/viewer/homerunviewer.desktop
 --- homerun-1.2.0/fullscreen/viewer/homerunviewer.desktop	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/fullscreen/viewer/homerunviewer.desktop	2014-03-12 22:37:51.159559204 +0000
++++ homerun-1.2.0.tpg/fullscreen/viewer/homerunviewer.desktop	2014-03-20 18:13:40.635885613 +0000
 @@ -17,6 +17,7 @@
  Name[fr]=Application Homerun pour KDE
  Name[gl]=Aplicativo de KDE Homerun
@@ -76,7 +76,7 @@ diff -Naur homerun-1.2.0/fullscreen/viewer/homerunviewer.desktop homerun-1.2.0.t
  Comment[nl]=Toont KDE Homerun in een pop-up
 diff -Naur homerun-1.2.0/kicker/package/metadata.desktop.cmake homerun-1.2.0.tpg/kicker/package/metadata.desktop.cmake
 --- homerun-1.2.0/kicker/package/metadata.desktop.cmake	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/kicker/package/metadata.desktop.cmake	2014-03-12 22:39:07.772628833 +0000
++++ homerun-1.2.0.tpg/kicker/package/metadata.desktop.cmake	2014-03-20 18:13:40.635885613 +0000
 @@ -7,6 +7,7 @@
  Name[fi]=Homerun Kicker
  Name[fr]=Lanceur de Homerun
@@ -95,7 +95,7 @@ diff -Naur homerun-1.2.0/kicker/package/metadata.desktop.cmake homerun-1.2.0.tpg
  Comment[pt_BR]=Versão do Homerun em janela
 diff -Naur homerun-1.2.0/lib/homerun-source.desktop homerun-1.2.0.tpg/lib/homerun-source.desktop
 --- homerun-1.2.0/lib/homerun-source.desktop	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/lib/homerun-source.desktop	2014-03-12 22:39:32.027285170 +0000
++++ homerun-1.2.0.tpg/lib/homerun-source.desktop	2014-03-20 18:13:40.636885644 +0000
 @@ -11,6 +11,7 @@
  Comment[fr]=Module externe Homerun
  Comment[gl]=Engadido de fontes de Homerun
@@ -106,7 +106,7 @@ diff -Naur homerun-1.2.0/lib/homerun-source.desktop homerun-1.2.0.tpg/lib/homeru
  Comment[nl]=Plug-in voor Homerun-bron
 diff -Naur homerun-1.2.0/plugins/recentdocuments/homerun-source-recentdocuments.desktop homerun-1.2.0.tpg/plugins/recentdocuments/homerun-source-recentdocuments.desktop
 --- homerun-1.2.0/plugins/recentdocuments/homerun-source-recentdocuments.desktop	2014-01-27 18:17:21.000000000 +0000
-+++ homerun-1.2.0.tpg/plugins/recentdocuments/homerun-source-recentdocuments.desktop	2014-03-12 22:40:12.337377152 +0000
++++ homerun-1.2.0.tpg/plugins/recentdocuments/homerun-source-recentdocuments.desktop	2014-03-20 18:13:40.636885644 +0000
 @@ -12,6 +12,7 @@
  Name[ga]=Cáipéisí is Déanaí
  Name[gl]=Documentos recentes
@@ -123,15 +123,26 @@ diff -Naur homerun-1.2.0/plugins/recentdocuments/homerun-source-recentdocuments.
  Comment[lt]=Parodyti neseniai naudotus dokumentus
  Comment[mr]=अलिकडे उघडलेल्या दस्तऐवजांची यादी
  Comment[nl]=Recent geopende documenten tonen
+diff -Naur homerun-1.2.0/po/CMakeLists.txt homerun-1.2.0.tpg/po/CMakeLists.txt
+--- homerun-1.2.0/po/CMakeLists.txt	2014-01-27 18:40:10.000000000 +0000
++++ homerun-1.2.0.tpg/po/CMakeLists.txt	2014-03-20 18:13:32.930673045 +0000
+@@ -7,6 +7,7 @@
+ add_subdirectory( fr )
+ add_subdirectory( gl )
+ add_subdirectory( lt )
++add_subdirectory( it )
+ add_subdirectory( nl )
+ add_subdirectory( pl )
+ add_subdirectory( pt )
 diff -Naur homerun-1.2.0/po/it/CMakeLists.txt homerun-1.2.0.tpg/po/it/CMakeLists.txt
 --- homerun-1.2.0/po/it/CMakeLists.txt	1970-01-01 00:00:00.000000000 +0000
-+++ homerun-1.2.0.tpg/po/it/CMakeLists.txt	2014-03-12 22:33:56.812148706 +0000
++++ homerun-1.2.0.tpg/po/it/CMakeLists.txt	2014-03-20 18:13:40.637885674 +0000
 @@ -0,0 +1,2 @@
 +file(GLOB _po_files *.po)
 +GETTEXT_PROCESS_PO_FILES( it ALL INSTALL_DESTINATION ${LOCALE_INSTALL_DIR} ${_po_files} )
 diff -Naur homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po
 --- homerun-1.2.0/po/it/plasma_applet_org.kde.homerun.po	1970-01-01 00:00:00.000000000 +0000
-+++ homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po	2014-03-12 22:34:02.484304663 +0000
++++ homerun-1.2.0.tpg/po/it/plasma_applet_org.kde.homerun.po	2014-03-20 18:13:40.638885702 +0000
 @@ -0,0 +1,635 @@
 +# Copyright (C) YEAR This_file_is_part_of_KDE
 +# This file is distributed under the same license as the PACKAGE package.
