@@ -2,5 +2,6 @@ removed_sources:
   homerun-1.0.0.tar.bz2: 6573eb1b733a6816b2a8c99161007c77856d8b05
   homerun-1.1.0.tar.xz: b49fa279c5ffd8a73ecda1689949a03a04b04dd3
   homerun-1.2.0.tar.xz: 5c6d02a2894150f3a99442bf73d682db5c20115f
-sources:
   homerun-1.2.2.tar.xz: 5fa817cfa588156ff31c933458d0f16c368065e1
+sources:
+  homerun-1.2.4.tar.xz: 29b7d7fddcc63d1aa364e47ebb5e945128e5b31d
