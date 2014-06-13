@@ -5,7 +5,7 @@
 Summary:	Fullscreen Launcher for KDE
 Name:		homerun
 Version:	1.2.4
-Release:	1
+Release:	2
 License:	GPLv2+, LGPLv2.1+, BSD
 Group:		Graphical desktop/KDE
 Url:		http://userbase.kde.org/Homerun
