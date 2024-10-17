@@ -8,7 +8,7 @@ Version:	1.2.5
 Release:	3
 License:	GPLv2+, LGPLv2.1+, BSD
 Group:		Graphical desktop/KDE
-Url:		http://userbase.kde.org/Homerun
+Url:		https://userbase.kde.org/Homerun
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}/src/%{name}-%{version}.tar.xz
 Source1:	favoriteapps.xml
 Patch0:		homerun-1.2.0-use-openmandriva-icon.patch
